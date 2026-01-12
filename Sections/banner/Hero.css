@@ -1,0 +1,13 @@
+.banner-hero {
+  background-image: url('../images/banner.jpg'); /* ejemplo de imagen */
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}

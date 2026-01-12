@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* BODY */
+body {
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* HEADER */
+.header {
+  background-color: #1670d6;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+/* BANNER HERO */
+.banner-hero {
+  background: linear-gradient(135deg, #1670d6, #1670d6);
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+  margin: 2rem 0;
+  border-radius: 10px;
+}
+
+.banner-hero h2 {
+  font-size: 2rem;
+}
+
+/* CONTACT SECTION */
+.contact {
+  background-color: #ffffff;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.contact h3 {
+  margin-bottom: 1rem;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact form button {
+  padding: 0.8rem 2rem;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact form button:hover {
+  background-color: #357ABD;
+}
+
+/* FOOTER */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border-top: 3px solid #4a90e2;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+.buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Botones */
+.btn {
+  padding: 0.8rem 2rem;
+  background-color: #ff7e5f;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #feb47b;
+  transform: scale(1.05);
+}
+
+.contact-img {
+  width: 230px;  
+  height: 230px; 
+  object-fit: cover;  
+  border-radius: 8px;  
+  margin-bottom: 1rem; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
+}
