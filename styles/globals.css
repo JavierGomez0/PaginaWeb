@@ -1,124 +1,126 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* COLORES */
+:root {
+    --fondo: #1f2f36;
+    --overlay: rgba(0, 0, 0, 0.65);
+    --amarillo: #f5c400;
+    --blanco: #ffffff;
+    --gris: #cfd8dc;
 }
 
 /* BODY */
 body {
-  background-color: #f5f7fa;
-  color: #333;
-  line-height: 1.6;
+    background-color: var(--fondo);
+    color: var(--blanco);
 }
 
 /* HEADER */
 .header {
-  background-color: #1670d6;
-  color: white;
-  text-align: center;
-  padding: 2rem 1rem;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    background-color: #18252b;
 }
 
-.header h1 {
-  font-size: 2.5rem;
-  letter-spacing: 1px;
-}
-
-/* BANNER HERO */
+/* HERO CON IMAGEN DE CÁMARA */
 .banner-hero {
-  background: linear-gradient(135deg, #1670d6, #1670d6);
-  color: white;
-  text-align: center;
-  padding: 4rem 1rem;
-  margin: 2rem 0;
-  border-radius: 10px;
+    position: relative;
+    height: 75vh;
+    background:
+        linear-gradient(var(--overlay), var(--overlay)),
+        url("../image/compu.jpg") center / cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
+
+
+/* TEXTO HERO */
 .banner-hero h2 {
-  font-size: 2rem;
+    font-size: 3rem;
+    margin-bottom: 25px;
+    font-weight: 600;
 }
 
-/* CONTACT SECTION */
-.contact {
-  background-color: #ffffff;
-  max-width: 600px;
-  margin: 2rem auto;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-.contact h3 {
-  margin-bottom: 1rem;
-}
-
-.contact form input,
-.contact form textarea {
-  width: 100%;
-  padding: 0.8rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.contact form button {
-  padding: 0.8rem 2rem;
-  background-color: #4a90e2;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.contact form button:hover {
-  background-color: #357ABD;
-}
-
-/* FOOTER */
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 1.5rem;
-  margin-top: 2rem;
-  border-top: 3px solid #4a90e2;
-}
-
-footer p {
-  font-size: 0.9rem;
-}
+/* BOTONES */
 .buttons {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
+    display: flex;
+    gap: 15px;
 }
 
-/* Botones */
 .btn {
-  padding: 0.8rem 2rem;
-  background-color: #ff7e5f;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 8px;
-  transition: 0.3s;
+    padding: 12px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: var(--amarillo);
+    color: #000;
+    transition: 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #feb47b;
-  transform: scale(1.05);
+    background-color: #e0b000;
+    transform: translateY(-3px);
 }
 
+/* SECCIÓN CONTACTO (IGUAL A LA FOTO) */
+.contact {
+    padding: 90px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.contact-text h3 {
+    margin-bottom: 15px; /* espacio debajo del título */
+}
+
+.contact-text p {
+    line-height: 1.4; /* espacio entre líneas */
+}
+
+/* IMAGEN */
 .contact-img {
-  width: 230px;  
-  height: 230px; 
-  object-fit: cover;  
-  border-radius: 8px;  
-  margin-bottom: 1rem; 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+/* FOOTER */
+.fooder {
+    padding: 20px;
+    text-align: center;
+    background-color: #18252b;
+    color: var(--gris);
+}
+
+
+/* MENÚ EN LA ESQUINA */
+.menu {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    gap: 18px;
+}
+
+/* LINKS AZUL / CELESTE */
+.menu a {
+    color: #ffc266;
+    text-decoration: underline;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #7bc4ff;
 }
