@@ -30,7 +30,7 @@ body {
 
 .banner-hero-b {
     position: relative;
-    height: 75vh;
+    height: 40vh;
     background:
         linear-gradient(var(--overlay), var(--overlay)),
         url("../image/futbol.jpg") center / cover no-repeat;
@@ -42,7 +42,7 @@ body {
 
 .banner-hero {
     position: relative;
-    height: 75vh;
+    height: 60vh;
     background:
         linear-gradient(var(--overlay), var(--overlay)),
         url("../image/compu.jpg") center / cover no-repeat;

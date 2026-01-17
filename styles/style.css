@@ -1,0 +1,598 @@
+ body {
+            font-family: "Noto Sans", sans-serif;
+        }
+        h1, h2, h3, h4, .font-display {
+            font-family: "Space Grotesk", sans-serif;
+        }
+
+.donaciones {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  min-height: 400px;
+  overflow: hidden;
+}
+
+.donaciones-bg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(245, 158, 11, 0.85), rgba(245, 158, 11, 0.85)),
+    url("https://www.soy502.com/sites/default/files/styles/full_node/public/2023/Jul/10/banco_industrial_educacion_becas_fundacion_kinal_guatemala_soy502_p.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: transform 1s ease;
+}
+
+.donaciones:hover .donaciones-bg {
+  transform: scale(1.05);
+}
+
+.donaciones-content {
+  position: relative;
+  z-index: 10;
+  max-width: 28rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.donaciones-title {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+}
+
+.donaciones-text {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.donaciones-btn {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 900;
+  background-color: #111418;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.donaciones-btn:hover {
+  background-color: #000000;
+  transform: translateY(-2px);
+}
+
+.empresas {
+  padding: 4rem 0;
+  margin-top: 0; 
+  background-color: #ffffff;
+}
+
+.empresas-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.empresas-title {
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 3.5rem;
+}
+
+.empresas-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.empresas-logos:hover {
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .empresas-logos {
+    gap: 5rem;
+  }
+}
+
+.dark .empresas {
+  background-color: #111418;
+}
+.alumni {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  min-height: 400px;
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .alumni {
+    padding: 6rem;
+  }
+}
+
+.alumni-bg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(17, 115, 212, 0.8), rgba(17, 115, 212, 0.8)),
+    url("https://static.wixstatic.com/media/128120_7e0f6d8a54fd4c1ab3a3e8fb34c6f657~mv2.jpg/v1/fill/w_320,h_220,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/128120_7e0f6d8a54fd4c1ab3a3e8fb34c6f657~mv2.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: transform 1s ease;
+}
+
+.alumni:hover .alumni-bg {
+  transform: scale(1.05);
+}
+
+.alumni-content {
+  position: relative;
+  z-index: 10;
+  max-width: 28rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.alumni-title {
+  font-size: 3rem; 
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+}
+
+.alumni-text {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.alumni-btn {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 900;
+  background-color: #ffffff;
+  color: #1173d4; 
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.alumni-btn:hover {
+  background-color: #f3f4f6; 
+  transform: translateY(-2px);
+}
+.layout-section {
+  display: flex;
+  flex-direction: column;   
+  min-height: 600px;        
+}
+
+@media (min-width: 1024px) {
+  .layout-section {
+    flex-direction: row;
+  }
+}
+
+.alumni-bg,
+.donaciones-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.alumni-content,
+.donaciones-content {
+  position: relative;
+  z-index: 1;
+  padding: 3rem;
+  color: white;
+  max-width: 420px;
+}
+
+.cards-row {
+  display: flex;
+  gap: 0;   
+  max-width: 1600px;  
+  margin: 4rem auto 0;
+  padding: 0 2rem;
+}
+
+.alumni,
+.donaciones {
+  flex: 1;
+  height: 580px;      
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.calidad-section {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+.calidad {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.dark .calidad {
+  background-color: #0b1219;
+}
+
+.calidad-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.calidad-header {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;     
+  text-align: center;
+  margin: 0 auto 6rem;     
+  max-width: 900px;        
+}
+
+
+.calidad-icon {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 32px; 
+}
+
+.calidad-icon-pulse {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(17, 115, 212, 0.1); 
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.calidad-icon-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.calidad-icon-content span {
+  font-size: 3.75rem; 
+  color: #1173d4; 
+  font-weight: 700;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.calidad-title {
+  font-size: 2.25rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .calidad-title {
+    font-size: 3.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-row {
+    flex-direction: column;
+  }
+
+  .alumni,
+  .donaciones {
+    height: 320px;
+  }
+}
+
+/* Texto */
+.calidad-text {
+   max-width: 900px;
+  margin: 0 auto;
+}
+
+.dark .calidad-text {
+  color: #9ca3af;
+}
+
+.calidad-highlight {
+  color: #1173d4;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: #f59e0b; /* decoration-accent-orange */
+  text-underline-offset: 4px;
+}
+
+.calidad-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .calidad-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.calidad-card {
+  text-align: center;
+}
+
+.dark .calidad-card {
+  background-color: #111827;
+}
+
+.calidad-number {
+  font-size: 2.25rem;
+  font-weight: 900;
+  color: #1173d4;
+  margin-bottom: 0.5rem;
+}
+
+.calidad-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.program-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9fafb;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 1px solid transparent;
+  transition: all 0.5s ease;
+}
+
+.program-card:hover {
+  box-shadow: 0 25px 50px rgba(17, 115, 212, 0.15);
+  border-color: rgba(17, 115, 212, 0.2);
+}
+
+.program-image {
+  aspect-ratio: 4 / 3;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.7s ease;
+}
+
+.program-card:hover .program-image {
+  transform: scale(1.1);
+}
+
+.program-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.program-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.program-icon {
+  font-size: 1.5rem;
+  color: #1173d4;
+  background-color: rgba(17, 115, 212, 0.1);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.program-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.program-text {
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.program-link {
+  margin-top: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #1173d4;
+  font-weight: 700;
+  text-decoration: none;
+  transition: gap 0.3s ease;
+}
+
+.program-link:hover {
+  gap: 1rem;
+}
+
+.dark .program-card {
+  background-color: #111827;
+}
+
+.dark .program-text {
+  color: #9ca3af;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #f0f2f4;
+}
+
+body.dark .header {
+  background: rgba(16, 25, 34, 0.9);
+  border-color: #1f2937;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  color: #1173d4;
+}
+
+.logo-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.logo-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #111418;
+}
+
+body.dark .logo-text {
+  color: #ffffff;
+}
+
+.header-nav {
+  display: none;
+  gap: 2rem;
+}
+
+.header-nav a {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #111418;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+  color: #1173d4;
+}
+
+body.dark .header-nav a {
+  color: #ffffff;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn-primary {
+  display: none;
+  min-width: 100px;
+  height: 40px;
+  padding: 0 1rem;
+  background-color: #1173d4;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(17, 115, 212, 0.35);
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: rgba(17, 115, 212, 0.9);
+}
+
+.btn-user {
+  width: 40px;
+  height: 40px;
+  border-radius: 0.5rem;
+  background-color: #f0f2f4;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+body.dark .btn-user {
+  background-color: #1f2937;
+  color: #ffffff;
+}
+
+
+@media (min-width: 640px) {
+  .btn-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-nav {
+    display: flex;
+  }
+}
+
+.logo-item img {
+  width: 100px;     
+  height: auto;
+  object-fit: contain;
+}
+
+footer {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
